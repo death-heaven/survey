@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey and Poll List</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Enhanced styling for tables and overall layout */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+    text-transform: uppercase;
+}
+
+table tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Survey and Poll List</h1>
+    </header>
+    <main>
+        <section id="surveys">
+            <h2>Surveys</h2>
+            <button onclick="location.href='create_survey.html'" class="create-button">Create Survey</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Survey Name</th>
+                        <th>Link</th>
+                        <th>Created On</th>
+                        <th>Last Date</th>
+                        <th>Author</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Survey 1</td>
+                        <td><a href="survey1.html">Take Survey</a></td>
+                        <td>2024-06-01</td>
+                        <td>2024-06-15</td>
+                        <td>John Doe</td>
+                    </tr>
+                    <tr>
+                        <td>Survey 2</td>
+                        <td><a href="survey2.html">Take Survey</a></td>
+                        <td>2024-06-10</td>
+                        <td>2024-06-25</td>
+                        <td>Jane Smith</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="polls">
+            <h2>Polls</h2>
+            <button onclick="location.href='create_poll.html'" class="create-button">Create Poll</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Poll Name</th>
+                        <th>Link</th>
+                        <th>Created On</th>
+                        <th>Last Date</th>
+                        <th>Author</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Poll 1</td>
+                        <td><a href="poll1.html">Vote in Poll</a></td>
+                        <td>2024-06-05</td>
+                        <td>2024-06-20</td>
+                        <td>Adam Johnson</td>
+                    </tr>
+                    <tr>
+                        <td>Poll 2</td>
+                        <td><a href="poll2.html">Vote in Poll</a></td>
+                        <td>2024-06-15</td>
+                        <td>2024-06-30</td>
+                        <td>Eve Brown</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Survey App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
